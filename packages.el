@@ -70,7 +70,8 @@ Each entry is either:
   (spacemacs|add-company-hook vue-mode))
 
 (defun vue/post-init-company-tern ()
-  (push 'company-tern 'company-web company-backends-vue-mode))
+  (push 'company-tern company-backends-vue-mode)
+  (push 'company-css company-backends-vue-mode))
 
 (defun vue/post-init-emmet-mode ()
   (add-hook 'vue-mode-hook 'emmet-mode))
